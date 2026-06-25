@@ -14,7 +14,7 @@ const required = [
 ]
 
 const failures = []
-const officialUrlPattern = /https:\/\/(?:github\.com\/heygen-com\/hyperframes(?:[^\s)\]]*)?|hyperframes\.heygen\.com(?:[^\s)\]]*)?|www\.hyperframes\.dev(?:[^\s)\]]*)?|www\.npmjs\.com\/package\/hyperframes(?:[^\s)\]]*)?)/g
+const officialUrlPattern = /(?:https:\/\/)?(?:github\.com\/heygen-com\/hyperframes(?:[^\s)\]]*)?|hyperframes\.heygen\.com(?:[^\s)\]]*)?|www\.hyperframes\.dev(?:[^\s)\]]*)?|www\.npmjs\.com\/package\/hyperframes(?:[^\s)\]]*)?)/g
 const officialSectionPattern = /^(?:##\s+Official (?:Sources|Links)|Official sources:)/gmi
 
 for (const file of required) {
