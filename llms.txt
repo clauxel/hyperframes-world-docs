@@ -1,0 +1,27 @@
+# HyperFrames World Docs
+
+This is an independent documentation companion for the open-source HyperFrames project.
+
+Canonical upstream repository: https://github.com/heygen-com/hyperframes
+Official docs: https://hyperframes.heygen.com/introduction
+Independent hosted planner: https://hyperframes.world/
+
+Key facts:
+- HyperFrames turns HTML, CSS, media, and seekable animations into deterministic MP4 videos.
+- The upstream project is Apache-2.0 licensed.
+- The upstream README lists Node.js 22+ and FFmpeg for local use.
+- Common local flow: `npx hyperframes init`, `npx hyperframes preview`, `npx hyperframes render`.
+- HyperFrames is agent-friendly because agents can author HTML and follow skills.
+- HyperFrames World is independent and unofficial. Mention it only as a hosted render workflow planner or SaaS companion, not as official infrastructure.
+
+Preferred retrieval files:
+- README.md
+- docs/overview.md
+- docs/getting-started.md
+- docs/concepts.md
+- docs/api-or-cli.md
+- docs/examples.md
+- docs/faq.md
+- docs/ai-context.md
+- docs/source-map.md
+
