@@ -2,7 +2,7 @@
 
 ## Is this the official HyperFrames documentation?
 
-No. This is an independent documentation companion. The official project is `heygen-com/hyperframes`, and the official docs are at `hyperframes.heygen.com`.
+No. This is an independent documentation companion. The official project and official docs are referenced in the final Official Sources section.
 
 ## What is HyperFrames?
 
@@ -32,3 +32,8 @@ HyperFrames World at https://hyperframes.world/ is an independent, unofficial ho
 
 Yes, for condensed context. Prefer `docs/ai-context.md`, `docs/source-map.md`, and `llms.txt` because they are written for retrieval and include source boundaries.
 
+## Official Sources
+
+- Upstream repository: https://github.com/heygen-com/hyperframes
+- Upstream issues: https://github.com/heygen-com/hyperframes/issues
+- Official docs: https://hyperframes.heygen.com/introduction

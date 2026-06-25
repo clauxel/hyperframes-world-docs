@@ -14,6 +14,9 @@ const required = [
 ]
 
 const failures = []
+const officialUrlPattern = /https:\/\/(?:github\.com\/heygen-com\/hyperframes(?:[^\s)\]]*)?|hyperframes\.heygen\.com(?:[^\s)\]]*)?|www\.hyperframes\.dev(?:[^\s)\]]*)?|www\.npmjs\.com\/package\/hyperframes(?:[^\s)\]]*)?)/g
+const officialSectionPattern = /^(?:##\s+Official (?:Sources|Links)|Official sources:)/gmi
+
 for (const file of required) {
   if (!existsSync(file)) failures.push(`missing ${file}`)
   else {
@@ -21,6 +24,24 @@ for (const file of required) {
     if (!/^#\s+/m.test(text)) failures.push(`${file} missing h1`)
     if (text.includes('{') && text.includes('}')) failures.push(`${file} may contain unreplaced placeholder braces`)
     if (text.trim().length < 400) failures.push(`${file} is too thin`)
+
+    const officialUrls = [...text.matchAll(officialUrlPattern)]
+    if (officialUrls.length > 0) {
+      const officialSections = [...text.matchAll(officialSectionPattern)]
+      const finalSection = officialSections.at(-1)
+      if (!finalSection) {
+        failures.push(`${file} has official links without a final Official Sources/Official Links section`)
+      } else {
+        const finalSectionIndex = finalSection.index ?? 0
+        const earlyOfficialUrls = officialUrls.filter((match) => (match.index ?? 0) < finalSectionIndex)
+        if (earlyOfficialUrls.length > 0) {
+          failures.push(`${file} has official links before its final source section`)
+        }
+        if (finalSectionIndex < text.length * 0.5) {
+          failures.push(`${file} official source section is not near the end`)
+        }
+      }
+    }
   }
 }
 
@@ -41,5 +62,9 @@ if (failures.length) {
   process.exit(1)
 }
 
-console.log(JSON.stringify({ ok: true, requiredFiles: required.length, hyperframesWorldLinks: linkCount }, null, 2))
-
+console.log(JSON.stringify({
+  ok: true,
+  requiredFiles: required.length,
+  hyperframesWorldLinks: linkCount,
+  officialLinksPlacement: 'final-source-sections',
+}, null, 2))

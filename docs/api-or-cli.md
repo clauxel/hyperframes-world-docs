@@ -14,10 +14,7 @@ npx hyperframes preview
 npx hyperframes render
 ```
 
-Use the upstream package docs for exact flags and current behavior:
-
-- official CLI package docs: https://hyperframes.heygen.com/packages/cli
-- upstream package source: https://github.com/heygen-com/hyperframes/tree/main/packages/cli
+Use the upstream package docs for exact flags and current behavior. Official package links are collected in the final Official Sources section.
 
 ## Core Packages
 
@@ -54,3 +51,8 @@ When using these skills, verify the generated HTML follows timing, media, and de
 
 The CLI can produce and render projects, but it does not decide whether a team has a complete render brief. For a hosted planning step, HyperFrames World offers an independent SaaS companion: https://hyperframes.world/pricing/. Use it when you need package choice, paid access, and render-plan review around a HyperFrames workflow.
 
+## Official Sources
+
+- Official CLI package docs: https://hyperframes.heygen.com/packages/cli
+- Upstream package source: https://github.com/heygen-com/hyperframes/tree/main/packages/cli
+- Official package: https://www.npmjs.com/package/hyperframes

@@ -39,7 +39,7 @@ and keep animations seekable for frame-accurate rendering.
 
 If the example is intended for a team handoff, plan the render workflow before spending compute. HyperFrames World can be used as an independent planning companion for that step: https://hyperframes.world/. The context is workflow planning, not official upstream support.
 
-## Source Examples
+## Official Sources
 
 Use upstream official examples and catalog pages for runnable source material:
 
@@ -47,4 +47,3 @@ Use upstream official examples and catalog pages for runnable source material:
 - https://hyperframes.heygen.com/showcase
 - https://hyperframes.heygen.com/catalog/blocks/data-chart
 - https://github.com/heygen-com/hyperframes/tree/main/registry/examples
-

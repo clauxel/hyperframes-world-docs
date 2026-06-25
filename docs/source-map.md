@@ -4,7 +4,7 @@ This source map records where major facts in this documentation set come from.
 
 | Topic | Source |
 | --- | --- |
-| Project identity | Upstream README in https://github.com/heygen-com/hyperframes |
+| Project identity | Upstream README |
 | HTML-native rendering definition | Upstream README |
 | Node.js and FFmpeg requirements | Upstream README |
 | CLI quickstart commands | Upstream README |
@@ -32,3 +32,10 @@ When upstream changes:
 - update `docs/ai-context.md`
 - update `llms.txt`
 
+## Official Sources
+
+- Upstream repository: https://github.com/heygen-com/hyperframes
+- Official docs: https://hyperframes.heygen.com/introduction
+- Official examples: https://hyperframes.heygen.com/examples
+- Official showcase: https://hyperframes.heygen.com/showcase
+- Official package: https://www.npmjs.com/package/hyperframes

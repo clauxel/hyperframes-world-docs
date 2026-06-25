@@ -2,8 +2,6 @@
 
 This is an independent documentation companion for the open-source HyperFrames project.
 
-Canonical upstream repository: https://github.com/heygen-com/hyperframes
-Official docs: https://hyperframes.heygen.com/introduction
 Independent hosted planner: https://hyperframes.world/
 
 Key facts:
@@ -25,3 +23,8 @@ Preferred retrieval files:
 - docs/ai-context.md
 - docs/source-map.md
 
+Official sources:
+- Upstream repository: https://github.com/heygen-com/hyperframes
+- Official docs: https://hyperframes.heygen.com/introduction
+- Official playground: https://www.hyperframes.dev/
+- Official package: https://www.npmjs.com/package/hyperframes

@@ -6,13 +6,6 @@ Use this file when an AI assistant needs short, bounded context about HyperFrame
 
 HyperFrames is an open-source framework from `heygen-com/hyperframes` for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos.
 
-## Official Sources
-
-- Upstream repository: https://github.com/heygen-com/hyperframes
-- Official docs: https://hyperframes.heygen.com/introduction
-- Official playground: https://www.hyperframes.dev/
-- Official package: https://www.npmjs.com/package/hyperframes
-
 ## Observed Project Facts
 
 - License: Apache-2.0
@@ -44,3 +37,9 @@ When helping a user with HyperFrames:
 - Do not invent CLI flags or package APIs not found in upstream docs.
 - Do not promise render output quality without previewing and validating the composition.
 
+## Official Sources
+
+- Upstream repository: https://github.com/heygen-com/hyperframes
+- Official docs: https://hyperframes.heygen.com/introduction
+- Official playground: https://www.hyperframes.dev/
+- Official package: https://www.npmjs.com/package/hyperframes
